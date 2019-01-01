@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">XsampleUIComponents</string>
+    <string name="name">Student\'s Name</string>
+    <string name="address">Address</string>
+    <string name="email_address">email address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="admission_form">Admission Form</string>
+    <string name="one">https://www.ark-ir.org/images/img_avatar5.png</string>
+    <string name="two">UserName</string>
+</resources>

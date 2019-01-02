@@ -17,7 +17,24 @@
             </intent-filter>
         </activity>
         <activity android:name=".ButtonActivities" />
-        <activity android:name=".AvatarViewer"></activity>
+        <activity android:name=".AvatarViewer" />
+        <activity android:name=".Widgets">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!--
+                     Include the host attribute if you want your app to respond
+                     only to URLs with your app's domain.
+                -->
+                <data
+                    android:host="www.example.com"
+                    android:scheme="http" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- The BROWSABLE category is required to get links from web pages. -->
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>

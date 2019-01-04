@@ -31,4 +31,8 @@ public class Main4Activity extends AppCompatActivity {
         Intent intent= new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.google.com"));
         startActivity(intent);
     }
+
+    public void goToAlerts(View view) {
+        startActivity(new Intent(this,Dialogs.class));
+    }
 }

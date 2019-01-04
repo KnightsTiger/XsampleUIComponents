@@ -1,7 +1,9 @@
 package com.example.knight.xsampleuicomponents;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,5 +31,8 @@ public class Main2Activity extends AppCompatActivity {
         });
     }
 
+    public void goToNextActivity(View view) {
+        startActivity(new Intent(this,Main3Activity.class));
     }
+}
 

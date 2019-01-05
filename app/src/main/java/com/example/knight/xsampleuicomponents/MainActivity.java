@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -54,6 +57,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void go(View view) {
+        Log.i("button clicked","Done in i");
+        Log.d("D clicked","Done in d");
+        Log.wtf("oone","two");
+
+
         startActivity(new Intent(this,ButtonActivities.class));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.options_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.one:
+                Toast.makeText(this,"settings",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.two:
+                Toast.makeText(this,"about us",Toast.LENGTH_SHORT).show();
+        }
+        return true;
     }
 }

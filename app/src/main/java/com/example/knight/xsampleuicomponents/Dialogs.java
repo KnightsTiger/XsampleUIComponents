@@ -5,6 +5,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ProgressBar;
 
 public class Dialogs extends AppCompatActivity {
 
@@ -31,6 +32,7 @@ public class Dialogs extends AppCompatActivity {
             }
         });
         builder.show();
+        builder.setCancelable(false);
     }
 
     public void showProgress(View view) {
